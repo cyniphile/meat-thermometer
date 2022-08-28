@@ -99,3 +99,9 @@ I got this reply: this thermometer uses the wireless 433 transmission protocol, 
 ------------------
 
 Alex suggested [searching FCC](https://apps.fcc.gov/oetcf/eas/reports/GranteeSearch.cfm?calledFromFrame=N). Good idea, but nothing came up for the owners of these trademarks: https://uspto.report/TM/88187155, https://trademarks.justia.com/881/87/taimasi-88187155.html. There was a note that some devices don't need to be registered individually, which is usually the case when an FCC ID is not readily visible on the device. I found no FCC ID either on the device shell, on the circuit boards, or in the manual, though it does have an FCC stamp of approval.
+
+-------------
+
+My SDR arrived from amazon in a couple days. It claims to only be compatible with matlab, but I wonder if there's a way to make it work with python. I found the pyrtlsdr lib. 
+
+First need to install some dependencies `brew install librtlsdr`, and Bam, we are in bidness!

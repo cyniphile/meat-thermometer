@@ -6,6 +6,9 @@ authors = ["Luke Schiefelbein <luke.schiefelbein@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.10.6"
+pyrtlsdr = "^0.2.93"
+pandas = "^1.4.3"
+seaborn = "^0.11.2"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.971"
