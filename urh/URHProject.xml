@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<UniversalRadioHackerProject description="" collapse_project_tabs="0" modulation_was_edited="0" broadcast_address_hex="ffff">
+  <modulators>
+    <modulator carrier_freq_hz="40000.0" carrier_amplitude="1.0" carrier_phase_deg="0.0" samples_per_symbol="100" name="Modulator" gauss_bt="0.5" gauss_filter_width="1.0" sample_rate="None" modulation_type="ASK" index="0" parameters="0.0,100.0" bits_per_symbol="1"/>
+  </modulators>
+  <device_conf>
+    <adaptive_noise>True</adaptive_noise>
+    <apply_dc_correction>True</apply_dc_correction>
+    <automatic_center>True</automatic_center>
+    <bandwidth>1000000.0</bandwidth>
+    <bias_tee_enabled>False</bias_tee_enabled>
+    <bits_per_symbol>1</bits_per_symbol>
+    <center>0</center>
+    <center_spacing>1</center_spacing>
+    <decoding_name>Manchester I</decoding_name>
+    <freq_correction>1</freq_correction>
+    <frequency>914978174.3535156</frequency>
+    <gain>20</gain>
+    <modulation_type>FSK</modulation_type>
+    <name>RTL-SDR</name>
+    <noise>0.9956</noise>
+    <num_sending_repeats>0</num_sending_repeats>
+    <rx_antenna_index>-1</rx_antenna_index>
+    <rx_baseband_gain>16</rx_baseband_gain>
+    <rx_gain>-100</rx_gain>
+    <rx_if_gain>20</rx_if_gain>
+    <sample_rate>1000000.0</sample_rate>
+    <samples_per_symbol>100</samples_per_symbol>
+    <tolerance>5</tolerance>
+  </device_conf>
+  <simulator_rx_conf/>
+  <simulator_tx_conf/>
+  <signal name="test-1packet each port" filename="test-1packet each port.complex16s" samples_per_symbol="100" center="0" center_spacing="1" tolerance="5" noise_threshold="1.0" noise_minimum="-1.2043446453225375" noise_maximum="0.2043446453225375" modulation_type="FSK" sample_rate="1000000.0" pause_threshold="8" message_length_divisor="1" bits_per_symbol="1" costas_loop_bandwidth="0.1">
+    <messages/>
+  </signal>
+  <open_file name="test-1packet each port.complex16s" position="0"/>
+  <group name="New Group" id="0">
+    <cf_protocol filename="test-1packet each port.complex16s"/>
+  </group>
+  <protocol>
+    <decodings>
+      <decoding>'Non Return To Zero (NRZ)', </decoding>
+      <decoding>'Non Return To Zero + Invert', 'Invert', </decoding>
+      <decoding>'Manchester I', 'Edge Trigger', </decoding>
+      <decoding>'Manchester II', 'Edge Trigger', 'Invert', </decoding>
+      <decoding>'Differential Manchester', 'Edge Trigger', 'Differential Encoding', </decoding>
+    </decodings>
+    <participants>
+      <participant name="Alice" shortname="A" address_hex="" color_index="0" id="a2f56ae1-f9b7-45f9-9691-5d30988b20ed" relative_rssi="0" simulate="0"/>
+      <participant name="Bob" shortname="B" address_hex="" color_index="1" id="77b01971-0076-4735-b135-2164f9b62d40" relative_rssi="1" simulate="0"/>
+    </participants>
+    <messages>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="81926" timestamp="1679532008.8574002" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="80826" timestamp="1679532008.8574479" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="5733174" timestamp="1679532008.857484" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="81934" timestamp="1679532008.8575182" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="80945" timestamp="1679532008.8575501" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="5738278" timestamp="1679532008.8575811" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="81571" timestamp="1679532008.857613" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="80551" timestamp="1679532008.857644" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="5737104" timestamp="1679532008.8576808" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="81554" timestamp="1679532008.857716" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="80561" timestamp="1679532008.857749" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="5738529" timestamp="1679532008.85778" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="81850" timestamp="1679532008.857812" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="80851" timestamp="1679532008.857846" decoding_index="0"/>
+      <message message_type_id="e6f8b649-5b4f-47e4-8a19-7558c003005b" modulator_index="0" pause="5559479" timestamp="1679532008.857877" decoding_index="0"/>
+    </messages>
+    <message_types>
+      <message_type name="Default" id="e6f8b649-5b4f-47e4-8a19-7558c003005b" assigned_by_ruleset="0" assigned_by_logic_analyzer="0">
+        <label name="preamble" start="2" end="32" color_index="0" apply_decoding="True" show="2" display_format_index="0" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="True"/>
+        <label name="synchronization" start="32" end="106" color_index="1" apply_decoding="True" show="2" display_format_index="0" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="True"/>
+        <checksum_label name="checksum" start="322" end="330" color_index="2" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="True" data_ranges="[[130, 322]]" category="generic">
+          <crc polynomial="111010101" start_value="00000000" final_xor="00000000" ref_in="0" ref_out="0"/>
+        </checksum_label>
+        <ruleset mode="0"/>
+      </message_type>
+    </message_types>
+  </protocol>
+  <simulator_config>
+    <items/>
+  </simulator_config>
+</UniversalRadioHackerProject>
